@@ -1,3 +1,5 @@
+# encoding: utf-8
 from django.contrib import admin
+from formapp.models import Contact
 
-# Register your models here.
+admin.site.register(Contact)
