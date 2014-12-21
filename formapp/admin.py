@@ -2,4 +2,8 @@
 from django.contrib import admin
 from formapp.models import Contact
 
-admin.site.register(Contact)
+
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('name', 'mail_address', 'title')
+
+admin.site.register(Contact, ContactAdmin)
