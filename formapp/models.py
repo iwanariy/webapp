@@ -9,7 +9,7 @@ class Contact(models.Model):
     description = models.TextField(u"Description")
 
     def __unicode__(self):
-        return self.item_code
+        return self.name
 
     class Meta:
         db_table = 'contact'
