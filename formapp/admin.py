@@ -4,6 +4,6 @@ from formapp.models import Contact
 
 
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('name', 'mail_address', 'title')
+    list_display = ('name', 'mail_address', 'subject')
 
 admin.site.register(Contact, ContactAdmin)

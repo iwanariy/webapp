@@ -5,7 +5,7 @@ from django.db import models
 class Contact(models.Model):
     name = models.CharField(u"Name", max_length=256)
     mail_address = models.CharField(u"Mail Address", max_length=256)
-    title = models.CharField(u"Title", max_length=256)
+    subject = models.CharField(u"Title", max_length=256)
     description = models.TextField(u"Description")
 
     def __unicode__(self):
