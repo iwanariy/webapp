@@ -14,4 +14,4 @@ class Contact(models.Model):
     class Meta:
         db_table = 'contact'
         verbose_name = u"お問い合わせ"
-        vervose_name_plural = u"お問い合わせ"
+        verbose_name_plural = u"お問い合わせ"
