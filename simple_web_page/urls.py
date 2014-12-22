@@ -8,6 +8,6 @@ urlpatterns = patterns(
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^contact/$', 'formapp.views.contactform', name='home'),
+    url(r'^contact/$', 'formapp.views.contact_display'),
     url(r'^contact/contact_complete/', 'formapp.views.contact_complete'),
 )
