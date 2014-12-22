@@ -7,3 +7,8 @@ def contactform(request):
     form = ContactForm()
 
     return render(request, 'contact_display.html', {'form': form})
+
+
+def contact_complete(request):
+
+    return render(request, 'contact_complete.html', {})
