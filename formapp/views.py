@@ -6,4 +6,4 @@ from formapp.forms import ContactForm
 def contactform(request):
     form = ContactForm()
 
-    return render(request, 'contact.html', {'form': form})
+    return render(request, 'contact_display.html', {'form': form})
