@@ -1,3 +1,9 @@
+# coding: utf-8
 from django.shortcuts import render
+from formapp.forms import ContactForm
 
-# Create your views here.
+
+def contactform(request):
+    form = ContactForm()
+
+    return render(request, 'contact.html', {'form': form})
