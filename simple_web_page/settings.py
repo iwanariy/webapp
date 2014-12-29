@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'debug_toolbar',
     'formapp',
     'noticeapp',
+    'imageapp',
 )
 
 MIDDLEWARE_CLASSES = (
