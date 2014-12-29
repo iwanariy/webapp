@@ -1,7 +1,9 @@
 # coding: utf-8
 from django.shortcuts import render
+from noticeapp.models import Notice
 
 
 # GET /xxx/
 def index(request):
-    return render(request, 'index.html', {})
+    notices = Notice.objects.all()
+    return render(request, 'index.html', {'notices': notices})
