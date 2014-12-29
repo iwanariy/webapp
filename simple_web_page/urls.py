@@ -10,4 +10,5 @@ urlpatterns = patterns(
     url(r'^admin/', include(admin.site.urls)),
     url(r'^contact/$', 'formapp.views.contact_display'),
     url(r'^contact/contact_complete/', 'formapp.views.contact_complete'),
+    url(r'^notice/$', 'noticeapp.views.index'),
 )
