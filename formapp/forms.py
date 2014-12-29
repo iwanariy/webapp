@@ -6,3 +6,4 @@ from formapp.models import Contact
 class ContactForm(ModelForm):
     class Meta:
         model = Contact
+        exclude = ('created_at',)
