@@ -90,4 +90,5 @@ STATIC_URL = '/static/'
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_DIR, 'templates/'),
     os.path.join(PROJECT_DIR, 'templates/formapp/'),
+    os.path.join(PROJECT_DIR, 'templates/noticeapp/'),
 )
