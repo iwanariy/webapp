@@ -44,6 +44,8 @@ INSTALLED_APPS = (
     'imageapp',
 )
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/')
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
