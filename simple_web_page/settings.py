@@ -45,6 +45,7 @@ INSTALLED_APPS = (
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/')
+MEDIA_URL = '/upload/'
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
