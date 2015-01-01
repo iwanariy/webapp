@@ -13,4 +13,5 @@ urlpatterns = patterns(
     url(r'^contact/$', 'formapp.views.contact_display'),
     url(r'^contact/contact_complete/', 'formapp.views.contact_complete'),
     url(r'^notice/$', 'noticeapp.views.index'),
+    url(r'^image/$', 'imageapp.views.index'),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
