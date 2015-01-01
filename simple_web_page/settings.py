@@ -41,7 +41,11 @@ INSTALLED_APPS = (
     'debug_toolbar',
     'formapp',
     'noticeapp',
+    'imageapp',
 )
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/')
+MEDIA_URL = '/upload/'
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
