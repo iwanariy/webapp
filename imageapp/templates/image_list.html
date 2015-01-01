@@ -1,10 +1,15 @@
-{% for image in images %}
-<p>
-<ul>
-  <li><img src="{{ image.image.url }}" height="200px" /></li>
-  <li>{{ image.file_name }}</li>
-  <li>{{ image.description }}</li>
-  <li>{{ image.published_at }}</li>
-</ul>
-</p>
-{% endfor %}
+<head>
+  <title>画像一覧</title>
+</head>
+<body>
+  {% for image in images %}
+  <p>
+  <ul>
+    <li><img src="{{ image.image.url }}" height="200px" /></li>
+    <li>{{ image.file_name }}</li>
+    <li>{{ image.description }}</li>
+    <li>{{ image.published_at }}</li>
+  </ul>
+  </p>
+  {% endfor %}
+</body>
