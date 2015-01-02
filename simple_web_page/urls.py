@@ -13,5 +13,5 @@ urlpatterns = patterns(
     url(r'^admin/', include(admin.site.urls)),
     url(r'^contact/', include('formapp.urls')),
     url(r'^notice/$', 'noticeapp.views.index'),
-    url(r'^image/$', 'imageapp.views.index'),
+    url(r'^image/', include('imageapp.urls')),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
