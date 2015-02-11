@@ -1,15 +1,16 @@
 <head>
   <title>画像一覧</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Lightbox -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
   {% for image in images %}
-  <p>
-  <ul>
-    <li><img src="{{ image.image.url }}" height="200px" /></li>
-    <li>{{ image.file_name }}</li>
-    <li>{{ image.description }}</li>
-    <li>{{ image.published_at }}</li>
-  </ul>
-  </p>
+  {{ image.file_name }}<br />
+  {{ image.published_at }}<br />
+  <a href="{{ image.image.url }}" data-lightbox="image" data-title="{{ image.description }}">
+    <img src="{{ image.image.url }}" height="200px" />
+  </a><br />
   {% endfor %}
 </body>
