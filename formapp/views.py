@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from formapp.forms import ContactForm
 
+APP_NAME = 'formapp'
+
 
 def contact_display(request):
     if request.method == 'POST':
@@ -13,9 +15,9 @@ def contact_display(request):
     else:
         form = ContactForm()
 
-    return render(request, 'contact_display.html', {'form': form})
+    return render(request, '%s/index.html' % APP_NAME, {'form': form})
 
 
 def contact_complete(request):
 
-    return render(request, 'contact_complete.html', {})
+    return render(request, '%s/contact_complete.html' % APP_NAME, {})
