@@ -1,6 +1,6 @@
 # encoding: utf-8
 """
-Django settings for simple_web_page project.
+Django settings for webapp project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -57,9 +57,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'simple_web_page.urls'
+ROOT_URLCONF = 'webapp.urls'
 
-WSGI_APPLICATION = 'simple_web_page.wsgi.application'
+WSGI_APPLICATION = 'webapp.wsgi.application'
 
 
 # Database
