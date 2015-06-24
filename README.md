@@ -1,18 +1,17 @@
-Sample Web Page powered by Django                                                               
+WebApp powered by Django                                                               
 ====
 
 Overview
 
 
 ## Description
-Djangoを使って、ごくごく簡単なweb pageを作ってみました。  
-見た目は一切考慮していません。  
+簡単なページを作る際のベースをDjangoで作ってみた。
 
 
 ## Requirement
 以下のバージョンで動作確認をしています。  
 
-- Django 1.7.1
+- Django 1.8.1
 - Python 2.7.6
 - sqlite3 3.8.5
 
@@ -27,6 +26,11 @@ Djangoを使って、ごくごく簡単なweb pageを作ってみました。
 
 
 ## Install
+```
+pip install -r requirements.txt
+./manage.py syncdb
+./manage.py runserver
+```
 
 
 ## Licence
