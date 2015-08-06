@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'formapp',
     'noticeapp',
     'imageapp',
+    'home',
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/')
