@@ -38,10 +38,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'debug_toolbar',
     'formapp',
     'noticeapp',
     'imageapp',
+    'home',
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/')
