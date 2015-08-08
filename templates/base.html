@@ -4,13 +4,13 @@
     <title>{% block title %}{% endblock title %}</title>
   </head>
   <body>
-  <!-- header -->
+    <!-- header -->
+    {% include 'header.html' %}
 
-  <!-- content -->
-  {% block content %}{% endblock content %}
+    <!-- content -->
+    {% block content %}{% endblock content %}
 
-  <!-- footer -->
-  <footer>
-  </footer>
+    <!-- footer -->
+    {% include 'footer.html' %}
   </body>
 </html>
